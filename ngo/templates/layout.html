@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aashraya Care Heaven</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static',filename='css/style.css') }}">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold"
+href="/">
+
+Aashraya Care Heaven
+
+</a>
+
+<button
+class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div
+class="collapse navbar-collapse"
+id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="/">Home</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="/about">About</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="/services">Services</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="/gallery">Gallery</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="/donate">Donate</a>
+
+</li>
+
+
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+{% block content %}
+
+{% endblock %}
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="row gy-5">
+
+<div class="col-lg-4">
+
+<h3>Aashraya Care Heaven</h3>
+
+<p>
+Providing care, dignity and hope to elderly people,
+families in need and children through community
+service and charitable initiatives.
+</p>
+
+<img src="{{ url_for('static', filename='images/logo.png') }}"
+class="footer-logo">
+
+</div>
+
+<div class="col-lg-4">
+
+<h3>Contact</h3>
+
+<p>
+📍 Kozhikode, Kerala
+</p>
+
+<p>
+📞 9496970824
+</p>
+
+<p>
+☎ 7560896143
+</p>
+
+<p>
+✉ aashrayaeducationaltrust@gmail.com
+</p>
+
+<p>
+🌐 www.aashraya.in
+</p>
+
+</div>
+
+<div class="col-lg-4 text-center">
+
+<h3>Scan To Donate</h3>
+
+<img src="{{ url_for('static', filename='images/qr.jpeg') }}"
+class="footer-qr">
+
+<p class="mt-3">
+Support our mission by scanning this QR code.
+Every contribution makes a difference.
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="social">
+
+<a href="https://www.facebook.com/share/17WZGuWqfQ/">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="https://www.instagram.com/aashrayaeducational">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://youtube.com/@aashrayaeducationaltrust">
+<i class="fab fa-youtube"></i>
+</a>
+
+</div>
+
+<p class="copyright">
+© 2026 Aashraya Care Heaven | All Rights Reserved
+</p>
+
+</div>
+
+</footer>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script
+src="{{ url_for('static',filename='js/script.js') }}">
+</script>
+
+</body>
+
+</html>

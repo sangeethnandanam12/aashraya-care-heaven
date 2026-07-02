@@ -1,0 +1,117 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<!-- HERO -->
+
+<section class="hero-small">
+
+    <div class="overlay">
+
+        <div class="container text-center">
+
+            <h1>Gallery</h1>
+
+            <p>Moments of Love, Care & Service</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="container py-5">
+
+<div class="text-center mb-5">
+
+<h2>Our Activities</h2>
+
+<p>
+A glimpse of our charity activities, food distribution, elderly care,
+volunteer work and community programs.
+</p>
+
+</div>
+ <h5>Food Distribution Program</h5>
+
+            <p>
+                Distribution of food kits to underprivileged families and
+                elderly people through Aashraya Care Heaven.
+            </p>
+<div class="row g-4">
+
+{% for i in range(1,16) %}
+
+<div class="col-md-4 mb-4">
+    
+    <div class="card shadow">
+ <img src="{{ url_for('static', filename='images/gallery/' ~ i ~ '.jpg') }}"
+     class="gallery-img">
+
+        <div class="card-body">
+
+        
+        </div>
+
+    </div>
+</div>
+
+{% endfor %}
+
+</div>
+
+</section>
+
+<!-- VIDEO -->
+
+<section class="bg-light py-5">
+
+<div class="container text-center">
+
+<h2 class="mb-4">
+
+Watch Our Journey
+
+</h2>
+
+<video
+width="100%"
+controls
+class="rounded shadow">
+
+<source
+src="{{ url_for('static',
+filename='videos/intro.mp4') }}"
+type="video/mp4">
+
+</video>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="donate">
+
+    <div class="container text-center">
+
+        <h2>Together We Can Change Lives</h2>
+
+        <p>
+            Your support helps us provide food, shelter, medical care,
+            education, and hope to those in need. Every donation makes a
+            meaningful difference.
+        </p>
+
+        <a href="/donate" class="btn btn-warning btn-lg">
+            <i class="fa-solid fa-heart me-2"></i> Donate Now
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

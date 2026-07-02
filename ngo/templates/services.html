@@ -1,0 +1,240 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<!-- HERO -->
+
+<section class="hero-small">
+
+    <div class="overlay">
+
+        <div class="container text-center">
+
+            <h1>Our Services</h1>
+
+            <p>Serving Humanity Through Love, Care & Compassion</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="container py-5">
+
+<h2 class="text-center mb-5">What We Do</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<div class="card-body text-center">
+
+<i class="fa-solid fa-house fa-4x text-success mb-3"></i>
+
+<h3>Old Age Care</h3>
+
+<p>
+
+Providing shelter, food, healthcare, emotional support, and a safe environment for senior citizens.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<div class="card-body text-center">
+
+<i class="fa-solid fa-hand-holding-heart fa-4x text-danger mb-3"></i>
+
+<h3>Food Distribution</h3>
+
+<p>
+
+Regular food kit distribution and free meals for poor families, elderly people, and homeless individuals.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<div class="card-body text-center">
+
+<i class="fa-solid fa-heart-pulse fa-4x text-primary mb-3"></i>
+
+<h3>Medical Assistance</h3>
+
+<p>
+
+Providing medicines, hospital support, health camps, and emergency medical assistance.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<div class="card-body text-center">
+
+<i class="fa-solid fa-graduation-cap fa-4x text-warning mb-3"></i>
+
+<h3>Educational Support</h3>
+
+<p>
+
+Helping children with school supplies, scholarships, books, and educational assistance.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<div class="card-body text-center">
+
+<i class="fa-solid fa-wheelchair fa-4x text-info mb-3"></i>
+
+<h3>Rehabilitation</h3>
+
+<p>
+
+Supporting differently abled individuals with rehabilitation programs and essential resources.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<div class="card-body text-center">
+
+<i class="fa-solid fa-people-group fa-4x text-success mb-3"></i>
+
+<h3>Community Welfare</h3>
+
+<p>
+
+Organizing awareness programs, relief camps, social welfare activities, and community development initiatives.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY OUR SERVICES -->
+
+<section class="bg-light py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-5">Our Commitment</h2>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<img src="{{ url_for('static', filename='images/service.jpg') }}"
+class="img-fluid rounded shadow">
+
+</div>
+
+<div class="col-md-6">
+
+<h3>Making Every Contribution Count</h3>
+
+<p>
+
+Every donation, volunteer effort, and act of kindness helps us improve the lives of those in need. We believe in transparency, compassion, and community participation.
+
+</p>
+
+<ul class="list-group list-group-flush">
+
+<li class="list-group-item">✔ Elderly Care & Shelter</li>
+
+<li class="list-group-item">✔ Food Distribution Programs</li>
+
+<li class="list-group-item">✔ Medical & Health Support</li>
+
+<li class="list-group-item">✔ Educational Assistance</li>
+
+<li class="list-group-item">✔ Disaster Relief Activities</li>
+
+<li class="list-group-item">✔ Community Development</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="donate">
+
+<div class="container text-center">
+
+<h2>Support Our Services</h2>
+
+<p>
+Together, we can transform lives and build a caring community.
+Every contribution helps us provide food, shelter, healthcare, education, and hope to those who need it most.
+</p>
+
+<a href="/donate" class="btn btn-warning btn-lg">
+    <i class="fa-solid fa-heart me-2"></i> Donate Now
+</a>
+
+</div>
+
+</section>
+
+
+{% endblock %}

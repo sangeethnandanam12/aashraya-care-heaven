@@ -1,0 +1,4 @@
+Flask
+gunicorn
+pymongo
+mysql-connector-python

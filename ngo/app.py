@@ -22,7 +22,10 @@ app.secret_key = "aashraya_secret_key"
 @app.route("/")
 def home():
 
-    total = donation_count()
+    try:
+        total = donation_count()
+    except Exception:
+        total = 0
 
     return render_template(
         "index.html",

@@ -223,7 +223,13 @@ def admin():
 
     )
 
+# ------------------------------------------------
+# GOOGLE SEARCH CONSOLE VERIFICATION
+# ------------------------------------------------
 
+@app.route("/googlee5ec18d9718ee57a.html")
+def google_verification():
+    return send_from_directory(".", "googlee5ec18d9718ee57a.html")
 # ------------------------------------------------
 # RUN APP
 # ------------------------------------------------

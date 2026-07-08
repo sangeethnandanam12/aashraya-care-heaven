@@ -20,26 +20,41 @@ body{
     color:#333;
 }
 
-/* NAVBAR */
+/* ===========================
+   LOGO + BRAND NAME
+=========================== */
 
 .navbar{
-    background:#0B3D2E !important;
-    box-shadow:0 5px 20px rgba(0,0,0,.2);
+    background:#ffffff !important;
+    padding:12px 35px;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
 
 .navbar-brand{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+.navbar-logo{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+}
+
+.brand-text h4{
+    margin:0;
+    color:#0B3D2E;
     font-size:28px;
-    font-weight:bold;
+    font-weight:700;
+    line-height:1.1;
 }
 
-.nav-link{
-    color:white !important;
-    margin-left:15px;
-    transition:.3s;
-}
-
-.nav-link:hover{
-    color:#FFD700 !important;
+.brand-text p{
+    margin:0;
+    color:#777;
+    font-size:14px;
+    font-weight:500;
 }
 
 /* HERO */

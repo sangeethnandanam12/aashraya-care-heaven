@@ -23,93 +23,170 @@ body{
 /* ===========================
    LOGO + BRAND NAME
 =========================== */
+/* ===========================
+   NAVBAR
+=========================== */
 
 .navbar{
     background:#ffffff !important;
-    padding:12px 35px;
+    padding:10px 20px;
     box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
 
 .navbar-brand{
     display:flex;
     align-items:center;
+    gap:10px;
     text-decoration:none;
+    flex:1;
+    min-width:0;
 }
 
 .navbar-logo{
-    width:80px;
-    height:80px;
+    width:65px;
+    height:65px;
     object-fit:contain;
+    flex-shrink:0;
+}
+
+.brand-text{
+    min-width:0;
 }
 
 .brand-text h4{
     margin:0;
-    color:#0B3D2E;
-    font-size:28px;
+    font-size:30px;
     font-weight:700;
+    color:#0B3D2E;
     line-height:1.1;
 }
 
 .brand-text p{
     margin:0;
-    color:#777;
     font-size:14px;
-    font-weight:500;
+    color:#666;
+}
+
+.navbar-toggler{
+    margin-left:auto;
+    border:none;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        padding:8px 12px;
+    }
+
+    .navbar-logo{
+        width:45px;
+        height:45px;
+    }
+
+    .brand-text h4{
+        font-size:18px;
+    }
+
+    .brand-text p{
+        font-size:10px;
+    }
+
+    .navbar-brand{
+        width:calc(100% - 60px);
+    }
 }
 
 /* HERO */
 
 .hero{
-
     height:90vh;
-
     background:url("../images/banner.jpg");
-
     background-size:cover;
-
     background-position:center;
-
+    background-repeat:no-repeat;
     position:relative;
-
 }
 
 .overlay{
-
     background:rgba(0,0,0,.55);
-
     width:100%;
-
     height:100%;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     color:white;
-
+    text-align:center;
+    padding:20px;
 }
 
 .hero h1{
-
     font-size:60px;
-
     font-weight:800;
-
 }
 
 .hero h3{
-
-    margin-top:20px;
-
-    margin-bottom:20px;
-
+    margin:20px 0;
 }
 
 .hero p{
-
     font-size:22px;
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+    .hero{
+        height:65vh;
+        background-position:center;
+    }
+
+    .hero h1{
+        font-size:36px;
+        line-height:1.2;
+    }
+
+    .hero h3{
+        font-size:20px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .overlay{
+        padding:15px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .hero{
+        height:55vh;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero h3{
+        font-size:18px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
 
 }
 

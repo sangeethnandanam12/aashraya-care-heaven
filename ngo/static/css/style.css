@@ -537,11 +537,17 @@ font-size:22px;
 
 @media (max-width:768px){
 
-    .founder-img{
-        width:130px;
-        height:130px;
-    }
-
+   .founder-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center 20%;
+    border:5px solid #ffc107;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    margin:0 auto 20px;
+    display:block;
+}
 }
 }
 .footer{

@@ -520,7 +520,29 @@ font-size:18px;
 font-size:22px;
 
 }
+/* ==========================
+   FOUNDER
+========================== */
 
+.founder-img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #ffc107;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    margin:0 auto 20px;
+    display:block;
+}
+
+@media (max-width:768px){
+
+    .founder-img{
+        width:130px;
+        height:130px;
+    }
+
+}
 }
 .footer{
     background:#1f1f1f;
